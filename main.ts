@@ -299,8 +299,7 @@ basic.forever(function () {
 basic.forever(function () {
     if (Affiche_HA > Seuil_HA || Température > Seuil_T) {
         Trappe_ON()
-        basic.pause(1000)
+    } else {
         Trappe_OFF()
-        basic.pause(5000)
     }
 })
